@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D2BEC3010EF36C090232607 /* Pods_PermutationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DD6DDDD31B32FF2BCF753E /* Pods_PermutationApp.framework */; };
+		7E2C846328F9F21C0012037D /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2C846228F9F21C0012037D /* ResultViewController.swift */; };
+		7E2C846528F9F26E0012037D /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2C846428F9F26E0012037D /* ResultView.swift */; };
+		7E8D016328F8ACCA0027F51F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D016228F8ACCA0027F51F /* AppDelegate.swift */; };
+		7E8D016528F8ACCA0027F51F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D016428F8ACCA0027F51F /* SceneDelegate.swift */; };
+		7E8D016C28F8ACCB0027F51F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E8D016B28F8ACCB0027F51F /* Assets.xcassets */; };
+		7E8D016F28F8ACCB0027F51F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8D016D28F8ACCB0027F51F /* LaunchScreen.storyboard */; };
+		7E8D017A28F8ACCB0027F51F /* PermutationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D017928F8ACCB0027F51F /* PermutationAppTests.swift */; };
+		7E8D018428F8ACCB0027F51F /* PermutationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D018328F8ACCB0027F51F /* PermutationAppUITests.swift */; };
+		7E8D018628F8ACCB0027F51F /* PermutationAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D018528F8ACCB0027F51F /* PermutationAppUITestsLaunchTests.swift */; };
+		7E8D019828F8AEF10027F51F /* PermutationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D019728F8AEF10027F51F /* PermutationViewController.swift */; };
+		7E8D019B28F8AF580027F51F /* PermutationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E8D019A28F8AF580027F51F /* PermutationView.swift */; };
+		7EEC04B528F9FEF800957741 /* PermutationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC04B428F9FEF800957741 /* PermutationFactory.swift */; };
+		7EEC04B728FA029500957741 /* PermutationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC04B628FA029500957741 /* PermutationViewModel.swift */; };
+		7EEC04B928FA180F00957741 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEC04B828FA180F00957741 /* ResultViewModel.swift */; };
+		99EFA479759342195E6E19F7 /* Pods_PermutationAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8E5C44932BF98EEDE449463 /* Pods_PermutationAppTests.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		FB109C7B3E5681D79F3E39BD /* Pods_PermutationApp_PermutationAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D562609D6C86870422901B /* Pods_PermutationApp_PermutationAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E8D017628F8ACCB0027F51F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E8D015728F8ACCA0027F51F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E8D015E28F8ACCA0027F51F;
+			remoteInfo = PermutationApp;
+		};
+		7E8D018028F8ACCB0027F51F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E8D015728F8ACCA0027F51F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E8D015E28F8ACCA0027F51F;
+			remoteInfo = PermutationApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F216C8EA5EE208D46151846 /* Pods-PermutationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PermutationApp.debug.xcconfig"; path = "Target Support Files/Pods-PermutationApp/Pods-PermutationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		63DD6DDDD31B32FF2BCF753E /* Pods_PermutationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PermutationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67C8BDE820F37305A745F0D8 /* Pods-PermutationAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PermutationAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PermutationAppTests/Pods-PermutationAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		68DC23E9BFD84C4A956BBA91 /* Pods-PermutationAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PermutationAppTests.release.xcconfig"; path = "Target Support Files/Pods-PermutationAppTests/Pods-PermutationAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		6F564FEAD9A405DB6F0BEA5B /* Pods-PermutationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PermutationApp.release.xcconfig"; path = "Target Support Files/Pods-PermutationApp/Pods-PermutationApp.release.xcconfig"; sourceTree = "<group>"; };
+		7E2C846228F9F21C0012037D /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		7E2C846428F9F26E0012037D /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		7E8D015F28F8ACCA0027F51F /* PermutationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PermutationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E8D016228F8ACCA0027F51F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E8D016428F8ACCA0027F51F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7E8D016B28F8ACCB0027F51F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E8D016E28F8ACCB0027F51F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E8D017028F8ACCB0027F51F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = PermutationApp/Resource/Info.plist; sourceTree = SOURCE_ROOT; };
+		7E8D017528F8ACCB0027F51F /* PermutationAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PermutationAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E8D017928F8ACCB0027F51F /* PermutationAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationAppTests.swift; sourceTree = "<group>"; };
+		7E8D017F28F8ACCB0027F51F /* PermutationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PermutationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E8D018328F8ACCB0027F51F /* PermutationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationAppUITests.swift; sourceTree = "<group>"; };
+		7E8D018528F8ACCB0027F51F /* PermutationAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7E8D019728F8AEF10027F51F /* PermutationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationViewController.swift; sourceTree = "<group>"; };
+		7E8D019A28F8AF580027F51F /* PermutationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationView.swift; sourceTree = "<group>"; };
+		7EEC04B428F9FEF800957741 /* PermutationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationFactory.swift; sourceTree = "<group>"; };
+		7EEC04B628FA029500957741 /* PermutationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermutationViewModel.swift; sourceTree = "<group>"; };
+		7EEC04B828FA180F00957741 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
+		B0F1B324BFA3AC18FED01961 /* Pods-PermutationApp-PermutationAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PermutationApp-PermutationAppUITests.release.xcconfig"; path = "Target Support Files/Pods-PermutationApp-PermutationAppUITests/Pods-PermutationApp-PermutationAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B3D562609D6C86870422901B /* Pods_PermutationApp_PermutationAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PermutationApp_PermutationAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD2586C345A9EB532AAA95A /* Pods-PermutationApp-PermutationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PermutationApp-PermutationAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PermutationApp-PermutationAppUITests/Pods-PermutationApp-PermutationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8E5C44932BF98EEDE449463 /* Pods_PermutationAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PermutationAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E8D015C28F8ACCA0027F51F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D2BEC3010EF36C090232607 /* Pods_PermutationApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8D017228F8ACCB0027F51F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EFA479759342195E6E19F7 /* Pods_PermutationAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8D017C28F8ACCB0027F51F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB109C7B3E5681D79F3E39BD /* Pods_PermutationApp_PermutationAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		651DBE3DC24946028BAF92A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63DD6DDDD31B32FF2BCF753E /* Pods_PermutationApp.framework */,
+				B3D562609D6C86870422901B /* Pods_PermutationApp_PermutationAppUITests.framework */,
+				E8E5C44932BF98EEDE449463 /* Pods_PermutationAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E2C846128F9F1FF0012037D /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				7E2C846228F9F21C0012037D /* ResultViewController.swift */,
+				7E2C846428F9F26E0012037D /* ResultView.swift */,
+				7EEC04B828FA180F00957741 /* ResultViewModel.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		7E8D015628F8ACCA0027F51F = {
+			isa = PBXGroup;
+			children = (
+				7E8D016128F8ACCA0027F51F /* PermutationApp */,
+				7E8D017828F8ACCB0027F51F /* PermutationAppTests */,
+				7E8D018228F8ACCB0027F51F /* PermutationAppUITests */,
+				7E8D016028F8ACCA0027F51F /* Products */,
+				D0A62B4C105A01C9A2A38E97 /* Pods */,
+				651DBE3DC24946028BAF92A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E8D016028F8ACCA0027F51F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E8D015F28F8ACCA0027F51F /* PermutationApp.app */,
+				7E8D017528F8ACCB0027F51F /* PermutationAppTests.xctest */,
+				7E8D017F28F8ACCB0027F51F /* PermutationAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E8D016128F8ACCA0027F51F /* PermutationApp */ = {
+			isa = PBXGroup;
+			children = (
+				7E8D019428F8AE040027F51F /* AppDelegate */,
+				7E8D019328F8ADEC0027F51F /* Resource */,
+				7E8D019228F8ADD80027F51F /* Modules */,
+			);
+			path = PermutationApp;
+			sourceTree = "<group>";
+		};
+		7E8D017828F8ACCB0027F51F /* PermutationAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E8D017928F8ACCB0027F51F /* PermutationAppTests.swift */,
+			);
+			path = PermutationAppTests;
+			sourceTree = "<group>";
+		};
+		7E8D018228F8ACCB0027F51F /* PermutationAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7E8D018328F8ACCB0027F51F /* PermutationAppUITests.swift */,
+				7E8D018528F8ACCB0027F51F /* PermutationAppUITestsLaunchTests.swift */,
+			);
+			path = PermutationAppUITests;
+			sourceTree = "<group>";
+		};
+		7E8D019228F8ADD80027F51F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				7E8D019928F8AF340027F51F /* Permutation */,
+				7E2C846128F9F1FF0012037D /* Result */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7E8D019328F8ADEC0027F51F /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				7E8D016B28F8ACCB0027F51F /* Assets.xcassets */,
+				7E8D017028F8ACCB0027F51F /* Info.plist */,
+				7E8D016D28F8ACCB0027F51F /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		7E8D019428F8AE040027F51F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				7E8D016228F8ACCA0027F51F /* AppDelegate.swift */,
+				7E8D016428F8ACCA0027F51F /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7E8D019928F8AF340027F51F /* Permutation */ = {
+			isa = PBXGroup;
+			children = (
+				7E8D019728F8AEF10027F51F /* PermutationViewController.swift */,
+				7E8D019A28F8AF580027F51F /* PermutationView.swift */,
+				7EEC04B428F9FEF800957741 /* PermutationFactory.swift */,
+				7EEC04B628FA029500957741 /* PermutationViewModel.swift */,
+			);
+			path = Permutation;
+			sourceTree = "<group>";
+		};
+		D0A62B4C105A01C9A2A38E97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F216C8EA5EE208D46151846 /* Pods-PermutationApp.debug.xcconfig */,
+				6F564FEAD9A405DB6F0BEA5B /* Pods-PermutationApp.release.xcconfig */,
+				DFD2586C345A9EB532AAA95A /* Pods-PermutationApp-PermutationAppUITests.debug.xcconfig */,
+				B0F1B324BFA3AC18FED01961 /* Pods-PermutationApp-PermutationAppUITests.release.xcconfig */,
+				67C8BDE820F37305A745F0D8 /* Pods-PermutationAppTests.debug.xcconfig */,
+				68DC23E9BFD84C4A956BBA91 /* Pods-PermutationAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E8D015E28F8ACCA0027F51F /* PermutationApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E8D018928F8ACCB0027F51F /* Build configuration list for PBXNativeTarget "PermutationApp" */;
+			buildPhases = (
+				3563D25652C707935CF50F94 /* [CP] Check Pods Manifest.lock */,
+				7E8D015B28F8ACCA0027F51F /* Sources */,
+				7E8D015C28F8ACCA0027F51F /* Frameworks */,
+				7E8D015D28F8ACCA0027F51F /* Resources */,
+				9911D65F771B4B7FE7267242 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PermutationApp;
+			productName = PermutationApp;
+			productReference = 7E8D015F28F8ACCA0027F51F /* PermutationApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E8D017428F8ACCB0027F51F /* PermutationAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E8D018C28F8ACCB0027F51F /* Build configuration list for PBXNativeTarget "PermutationAppTests" */;
+			buildPhases = (
+				5D12F763CCBAE8BBDDF4C66E /* [CP] Check Pods Manifest.lock */,
+				7E8D017128F8ACCB0027F51F /* Sources */,
+				7E8D017228F8ACCB0027F51F /* Frameworks */,
+				7E8D017328F8ACCB0027F51F /* Resources */,
+				33EF4CCCFCC41070E01BD340 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E8D017728F8ACCB0027F51F /* PBXTargetDependency */,
+			);
+			name = PermutationAppTests;
+			productName = PermutationAppTests;
+			productReference = 7E8D017528F8ACCB0027F51F /* PermutationAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7E8D017E28F8ACCB0027F51F /* PermutationAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E8D018F28F8ACCB0027F51F /* Build configuration list for PBXNativeTarget "PermutationAppUITests" */;
+			buildPhases = (
+				42EACC822FDE3398E86DF4F0 /* [CP] Check Pods Manifest.lock */,
+				7E8D017B28F8ACCB0027F51F /* Sources */,
+				7E8D017C28F8ACCB0027F51F /* Frameworks */,
+				7E8D017D28F8ACCB0027F51F /* Resources */,
+				37731369C7A30D8CFA648AA0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E8D018128F8ACCB0027F51F /* PBXTargetDependency */,
+			);
+			name = PermutationAppUITests;
+			productName = PermutationAppUITests;
+			productReference = 7E8D017F28F8ACCB0027F51F /* PermutationAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E8D015728F8ACCA0027F51F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					7E8D015E28F8ACCA0027F51F = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					7E8D017428F8ACCB0027F51F = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 7E8D015E28F8ACCA0027F51F;
+					};
+					7E8D017E28F8ACCB0027F51F = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 7E8D015E28F8ACCA0027F51F;
+					};
+				};
+			};
+			buildConfigurationList = 7E8D015A28F8ACCA0027F51F /* Build configuration list for PBXProject "PermutationApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E8D015628F8ACCA0027F51F;
+			productRefGroup = 7E8D016028F8ACCA0027F51F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E8D015E28F8ACCA0027F51F /* PermutationApp */,
+				7E8D017428F8ACCB0027F51F /* PermutationAppTests */,
+				7E8D017E28F8ACCB0027F51F /* PermutationAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E8D015D28F8ACCA0027F51F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8D016F28F8ACCB0027F51F /* LaunchScreen.storyboard in Resources */,
+				7E8D016C28F8ACCB0027F51F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8D017328F8ACCB0027F51F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8D017D28F8ACCB0027F51F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33EF4CCCFCC41070E01BD340 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PermutationAppTests/Pods-PermutationAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PermutationAppTests/Pods-PermutationAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PermutationAppTests/Pods-PermutationAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3563D25652C707935CF50F94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PermutationApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37731369C7A30D8CFA648AA0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PermutationApp-PermutationAppUITests/Pods-PermutationApp-PermutationAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PermutationApp-PermutationAppUITests/Pods-PermutationApp-PermutationAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PermutationApp-PermutationAppUITests/Pods-PermutationApp-PermutationAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42EACC822FDE3398E86DF4F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PermutationApp-PermutationAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D12F763CCBAE8BBDDF4C66E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PermutationAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9911D65F771B4B7FE7267242 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PermutationApp/Pods-PermutationApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PermutationApp/Pods-PermutationApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PermutationApp/Pods-PermutationApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E8D015B28F8ACCA0027F51F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2C846328F9F21C0012037D /* ResultViewController.swift in Sources */,
+				7EEC04B928FA180F00957741 /* ResultViewModel.swift in Sources */,
+				7EEC04B728FA029500957741 /* PermutationViewModel.swift in Sources */,
+				7E8D016328F8ACCA0027F51F /* AppDelegate.swift in Sources */,
+				7E8D019828F8AEF10027F51F /* PermutationViewController.swift in Sources */,
+				7E8D016528F8ACCA0027F51F /* SceneDelegate.swift in Sources */,
+				7E8D019B28F8AF580027F51F /* PermutationView.swift in Sources */,
+				7EEC04B528F9FEF800957741 /* PermutationFactory.swift in Sources */,
+				7E2C846528F9F26E0012037D /* ResultView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8D017128F8ACCB0027F51F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8D017A28F8ACCB0027F51F /* PermutationAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E8D017B28F8ACCB0027F51F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8D018428F8ACCB0027F51F /* PermutationAppUITests.swift in Sources */,
+				7E8D018628F8ACCB0027F51F /* PermutationAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E8D017728F8ACCB0027F51F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E8D015E28F8ACCA0027F51F /* PermutationApp */;
+			targetProxy = 7E8D017628F8ACCB0027F51F /* PBXContainerItemProxy */;
+		};
+		7E8D018128F8ACCB0027F51F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E8D015E28F8ACCA0027F51F /* PermutationApp */;
+			targetProxy = 7E8D018028F8ACCB0027F51F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E8D016D28F8ACCB0027F51F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E8D016E28F8ACCB0027F51F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E8D018728F8ACCB0027F51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E8D018828F8ACCB0027F51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E8D018A28F8ACCB0027F51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F216C8EA5EE208D46151846 /* Pods-PermutationApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QXX4852TTD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = /Users/brunosilva/Desktop/PermutationApp/PermutationApp/Resource/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoSilva.PermutationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7E8D018B28F8ACCB0027F51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F564FEAD9A405DB6F0BEA5B /* Pods-PermutationApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QXX4852TTD;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = /Users/brunosilva/Desktop/PermutationApp/PermutationApp/Resource/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoSilva.PermutationApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		7E8D018D28F8ACCB0027F51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67C8BDE820F37305A745F0D8 /* Pods-PermutationAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QXX4852TTD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoSilva.PermutationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PermutationApp.app/PermutationApp";
+			};
+			name = Debug;
+		};
+		7E8D018E28F8ACCB0027F51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68DC23E9BFD84C4A956BBA91 /* Pods-PermutationAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QXX4852TTD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoSilva.PermutationAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PermutationApp.app/PermutationApp";
+			};
+			name = Release;
+		};
+		7E8D019028F8ACCB0027F51F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFD2586C345A9EB532AAA95A /* Pods-PermutationApp-PermutationAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QXX4852TTD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoSilva.PermutationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PermutationApp;
+			};
+			name = Debug;
+		};
+		7E8D019128F8ACCB0027F51F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0F1B324BFA3AC18FED01961 /* Pods-PermutationApp-PermutationAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QXX4852TTD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BrunoSilva.PermutationAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PermutationApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E8D015A28F8ACCA0027F51F /* Build configuration list for PBXProject "PermutationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E8D018728F8ACCB0027F51F /* Debug */,
+				7E8D018828F8ACCB0027F51F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E8D018928F8ACCB0027F51F /* Build configuration list for PBXNativeTarget "PermutationApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E8D018A28F8ACCB0027F51F /* Debug */,
+				7E8D018B28F8ACCB0027F51F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E8D018C28F8ACCB0027F51F /* Build configuration list for PBXNativeTarget "PermutationAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E8D018D28F8ACCB0027F51F /* Debug */,
+				7E8D018E28F8ACCB0027F51F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E8D018F28F8ACCB0027F51F /* Build configuration list for PBXNativeTarget "PermutationAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E8D019028F8ACCB0027F51F /* Debug */,
+				7E8D019128F8ACCB0027F51F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E8D015728F8ACCA0027F51F /* Project object */;
+}
